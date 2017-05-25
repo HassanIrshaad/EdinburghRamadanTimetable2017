@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Edinburgh Ramadan Timetable</string>
+    <string name="title_cal">Ramadan Calendar 2017</string>
+    <string name="column_header1">Prayer Name</string>
+    <string name="column_header2">Time</string>
+    <string name="fajr">END OF SEHRI</string>
+    <string name="sunrise">SUNRISE</string>
+    <string name="zuhr">ZUHR</string>
+    <string name="asr">ASR</string>
+    <string name="magrhib">MAGRHIB/IFTAR</string>
+    <string name="isha">ISHA</string>
+    <string name="crrnt">Current Rozah</string>
+    <string name="cal">Calendar</string>
+    <string name="masjids">Masjids</string>
+    <string name="about">About</string>
+    <string name="header">Duas</string>
+    <string name="info">Masjids in Edinburgh</string>
+    <string name="m1details">Edinburgh Central Mosque \n Address: \n50 Potterrow\nEdinburgh\nEH8 9B \n Phone No: 01316671777\n<a href="https://goo.gl/maps/L62EHgQwptM2">Maps</a></string>
+    <string name="m2details">Edinburgh Annandale Mosque \n Address:\n43-45 Annandale St\nEdinburgh\nEH7 4AZ\nPhone No: 01316671777\n<a href="https://goo.gl/maps/Nw39QrHc3UC2">Maps</a></string>
+    <string name="m3details">Edinburgh Blackhall Mosque \n Address:\n1 House O\'Hill Rd\nEdinburgh\nEH4 2AJ\nPhone No: 01316671777\n<a href="https://goo.gl/maps/afT5jWBFgZn">Maps</a></string>
+    <string name="m4details">Portobello Islamic Educational Centre \n Address:\n3 Fishwives Causeway\nEdinburgh\nEH15 1DF\nPhone No: 0131 657 1581\n<a href="https://goo.gl/maps/Ya8sqp11CiD2">Maps</a></string>
+    <string name="m5details">Iqra Academy \n Address:\n10 E Suffolk Rd\nEdinburgh\nEH16 5PH\nPhone No: 0131 667 7474\n<a href="https://goo.gl/maps/3bWDRZcWAyk">Maps</a></string>
+    <string name="m6details">Edinburgh Roxburgh Mosque \n Address:\n12 Roxburgh St\nEdinburgh\nEH8 9TA\nPhone No: 0131 556 1902\n<a href="https://goo.gl/maps/Z3V7BGfZ95P2">Maps</a></string>
+    <string name="m7details">Shah Jalal Mosque and Islamic Centre \n Address:\n8a Annandale Street Lane\nEdinburgh\nEH7 4LS\nPhone No: 0131 557 1841\n<a href="https://goo.gl/maps/K2r2Cyu326M2">Maps</a></string>
+    <string name="banner_ad_unit_id">ca-app-pub-1157554906879713/4722721187</string>
+    <string name="banner_ad_unit_id1">ca-app-pub-1157554906879713/2827185585</string>
+    <string name="banner_ad_unit_id2">ca-app-pub-1157554906879713/4303918782</string>
+    <string name="banner_ad_unit_id3">ca-app-pub-1157554906879713/5780651989</string>
+    <string name="banner_ad_unit_id4">ca-app-pub-1157554906879713/7257385187</string>
+</resources>

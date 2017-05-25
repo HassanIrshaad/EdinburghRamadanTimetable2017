@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    >
+
+        <ScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/button_table"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/title_about"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColor"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="20sp"
+                    android:layout_centerHorizontal="true"
+                    android:textAlignment="center"
+                    android:textStyle="italic"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="@string/info"
+                    />
+
+                <TextView
+                    android:id="@+id/mosque1"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    style="@style/button_text1"
+                    android:text="@string/m1details"
+                    />
+
+                <TextView
+                    android:id="@+id/mosque2"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_below="@id/mosque1"
+                    style="@style/button_text1"
+                    android:text="@string/m2details"
+                    />
+
+                <TextView
+                    android:id="@+id/mosque3"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_below="@id/mosque2"
+                    style="@style/button_text1"
+                    android:text="@string/m3details"
+                    />
+
+                <TextView
+                    android:id="@+id/mosque4"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_below="@id/mosque3"
+                    style="@style/button_text1"
+                    android:text="@string/m4details"
+                    />
+
+                <TextView
+                    android:id="@+id/mosque5"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_below="@id/mosque4"
+                    style="@style/button_text1"
+                    android:text="@string/m5details"
+                    />
+
+                <TextView
+                    android:id="@+id/mosque6"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_below="@id/mosque5"
+                    style="@style/button_text1"
+                    android:text="@string/m6details"
+                    />
+
+                <TextView
+                    android:id="@+id/mosque7"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_below="@id/mosque6"
+                    style="@style/button_text1"
+                    android:text="@string/m7details"
+                    />
+            </RelativeLayout>
+
+
+        </ScrollView>
+    <TableLayout
+        android:id="@+id/button_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:stretchColumns="*"
+        android:background="@color/colorPrimary"
+        >
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/home"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                style="@style/button_text"
+                android:background="@drawable/custom_button2"
+                android:text="@string/crrnt"
+                />
+            <Button
+                android:id="@+id/calendar"
+                android:layout_width="15dp"
+                android:layout_height="40dp"
+                style="@style/button_text"
+                android:background="@drawable/custom_button2"
+                android:text="@string/cal"
+                />
+            <Button
+                android:id="@+id/about_us"
+                android:layout_width="8dp"
+                android:layout_height="40dp"
+                style="@style/button_text"
+                android:background="@drawable/custom_button2"
+                android:text="Masjids"
+                />
+            <Button
+                android:id="@+id/info"
+                android:layout_width="8dp"
+                android:layout_height="40dp"
+                style="@style/button_text"
+                android:background="@drawable/custom_button2"
+                android:text="Duas"
+                />
+        </TableRow>
+    </TableLayout>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id3">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

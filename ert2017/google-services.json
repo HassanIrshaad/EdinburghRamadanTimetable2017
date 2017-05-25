@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "749295948961",
+    "firebase_url": "https://annadaleramadantimetable.firebaseio.com",
+    "project_id": "annadaleramadantimetable",
+    "storage_bucket": "annadaleramadantimetable.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:749295948961:android:7ada228e032db23c",
+        "android_client_info": {
+          "package_name": "com.test.hassan.annadaleramadantimetable"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "749295948961-hcs1417kjc4ghdmputav191icvfgnd74.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.test.hassan.annadaleramadantimetable",
+            "certificate_hash": "b032ee4b4c68e22aefd6a56e401ef83739a052a0"
+          }
+        },
+        {
+          "client_id": "749295948961-sd6lsggi0ehbgr8ni62nr393oovmbma2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaH_GTncfEqO4zkjOzilHps0cYTMTiE9I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "749295948961-sd6lsggi0ehbgr8ni62nr393oovmbma2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
