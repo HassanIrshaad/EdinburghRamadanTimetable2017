@@ -9,12 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity">
         </activity>
         <activity android:name=".Ramadan_Calendar">
         </activity>
@@ -23,6 +25,20 @@
         <activity android:name=".Day1">
         </activity>
         <activity android:name=".Info">
+        </activity>
+        <activity android:name=".CalendarMain">
+        </activity>
+        <activity android:name=".Ramadan_Calendar_Cen">
+        </activity>
+        <activity android:name=".Day1_Central">
+        </activity>
+        <activity android:name=".Ramadan_Calendar_Iqra">
+        </activity>
+        <activity android:name=".Day1_Iqra">
+        </activity>
+        <activity android:name=".Ramadan_Calendar_Blackhall">
+        </activity>
+        <activity android:name=".Day1_Blackhall">
         </activity>
     </application>
 

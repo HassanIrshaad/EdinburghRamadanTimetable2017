@@ -1,11 +1,17 @@
 package com.test.hassan.annadaleramadantimetable;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
@@ -60,7 +66,10 @@ public class Ramadan_Calendar extends AppCompatActivity {
     TextView asr;
     TextView iftar;
     TextView isha;
-    TextView tester;
+    TextView cal_title;
+
+    LayoutInflater inflater;
+    ViewPager vp;
 
     private AdView mAdView;
 
@@ -69,6 +78,20 @@ public class Ramadan_Calendar extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         // Get the view from new_activity.xml
         setContentView(R.layout.calendar_layout);
+
+        cal_title = (TextView)  findViewById(R.id.cal_title);
+        cal_title.setText("Annandale Ramadan Calendar 2017");
+
+
+       // Intent intent = getIntent();
+       // String mosque = intent.getStringExtra("mosque");
+
+//        Bundle extras = getIntent().getExtras();
+//        if (extras != null) {
+//            String result = extras.getString("annandale");
+//            System.out.println("yeah"+result);
+//        }
+
 
         mAdView = (AdView) findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
@@ -105,8 +128,7 @@ public class Ramadan_Calendar extends AppCompatActivity {
         day29 = (Button) findViewById(R.id.day_29);
         day30 = (Button) findViewById(R.id.day_30);
 
-
-
+        //   if(mosque.equalsIgnoreCase("annandale")) {
         day1.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -115,6 +137,7 @@ public class Ramadan_Calendar extends AppCompatActivity {
                         Day1.class);
                 Bundle b = new Bundle();
                 b.putString("date", "27 MAY"); //Your id
+                b.putString("mosque", "annandale");
                 myIntent.putExtras(b); //Put your id to your next Intent
                 startActivity(myIntent);
             }
@@ -431,103 +454,41 @@ public class Ramadan_Calendar extends AppCompatActivity {
             }
         });
 
-        day26.setOnClickListener(new View.OnClickListener() {
 
-            @Override
-            public void onClick(View v) {
-                Intent myIntent = new Intent(Ramadan_Calendar.this,
-                        Day1.class);
-                Bundle b = new Bundle();
-                b.putString("date", "21 JUNE"); //Your id
-                myIntent.putExtras(b); //Put your id to your next Intent
-                startActivity(myIntent);
-            }
-        });
+            home_bttn = (Button) findViewById(R.id.home);
+            home_bttn.setOnClickListener(new View.OnClickListener() {
 
-        day27.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent myIntent = new Intent(Ramadan_Calendar.this,
-                        Day1.class);
-                Bundle b = new Bundle();
-                b.putString("date", "22 JUNE"); //Your id
-                myIntent.putExtras(b); //Put your id to your next Intent
-                startActivity(myIntent);
-            }
-        });
+                @Override
+                public void onClick(View v) {
+                    Intent myIntent = new Intent(Ramadan_Calendar.this,
+                            MainActivity.class);
+                    startActivity(myIntent);
+                }
+            });
 
-        day28.setOnClickListener(new View.OnClickListener() {
+            about_bttn = (Button) findViewById(R.id.about_us);
+            about_bttn.setOnClickListener(new View.OnClickListener() {
 
-            @Override
-            public void onClick(View v) {
-                Intent myIntent = new Intent(Ramadan_Calendar.this,
-                        Day1.class);
-                Bundle b = new Bundle();
-                b.putString("date", "23 JUNE"); //Your id
-                myIntent.putExtras(b); //Put your id to your next Intent
-                startActivity(myIntent);
-            }
-        });
+                @Override
+                public void onClick(View v) {
+                    Intent myIntent = new Intent(Ramadan_Calendar.this,
+                            Masjids.class);
+                    startActivity(myIntent);
+                }
+            });
 
-        day29.setOnClickListener(new View.OnClickListener() {
+            info_bttn = (Button) findViewById(R.id.info);
+            info_bttn.setOnClickListener(new View.OnClickListener() {
 
-            @Override
-            public void onClick(View v) {
-                Intent myIntent = new Intent(Ramadan_Calendar.this,
-                        Day1.class);
-                Bundle b = new Bundle();
-                b.putString("date", "24 JUNE"); //Your id
-                myIntent.putExtras(b); //Put your id to your next Intent
-                startActivity(myIntent);
-            }
-        });
+                @Override
+                public void onClick(View v) {
+                    Intent myIntent = new Intent(Ramadan_Calendar.this,
+                            Info.class);
 
-        day30.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                Intent myIntent = new Intent(Ramadan_Calendar.this,
-                        Day1.class);
-                Bundle b = new Bundle();
-                b.putString("date", "25 JUNE"); //Your id
-                myIntent.putExtras(b); //Put your id to your next Intent
-                startActivity(myIntent);
-            }
-        });
-
-        home_bttn = (Button)findViewById(R.id.home);
-        home_bttn .setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                Intent myIntent = new Intent(Ramadan_Calendar.this,
-                        MainActivity.class);
-                startActivity(myIntent);
-            }
-        });
-
-        about_bttn = (Button)findViewById(R.id.about_us);
-        about_bttn .setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                Intent myIntent = new Intent(Ramadan_Calendar.this,
-                        Masjids.class);
-                startActivity(myIntent);
-            }
-        });
-
-        info_bttn = (Button)findViewById(R.id.calendar);
-        info_bttn .setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                Intent myIntent = new Intent(Ramadan_Calendar.this,
-                        Info.class);
-                startActivity(myIntent);
-            }
-        });
-
+                    startActivity(myIntent);
+                }
+            });
+       // }
     }
 
 }

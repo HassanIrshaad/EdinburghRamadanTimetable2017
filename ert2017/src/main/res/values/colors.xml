@@ -8,4 +8,6 @@
     <color name="tableBg">#F5F5F5</color>
     <color name="tableText">#888888</color>
     <color name="statusBar">#636265</color>
+    <color name="highlight">#6ce09a</color>
+
 </resources>

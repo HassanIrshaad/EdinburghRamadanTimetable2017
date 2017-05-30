@@ -54,7 +54,7 @@ public class Info extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent myIntent = new Intent(Info.this,
-                        Ramadan_Calendar.class);
+                        CalendarMain.class);
                 startActivity(myIntent);
             }
         });
@@ -91,17 +91,8 @@ public class Info extends AppCompatActivity {
         txt4 = (TextView) findViewById(R.id.header_for_duas);
         txt4.setText(Html.fromHtml("<b>Duas during Ramadan:</b><br>"));
 
-        txt5 = (TextView) findViewById(R.id.header_for_other);
-        txt5.setText(Html.fromHtml("<b>Other Information:</b><br>"));
-
         txt6 = (TextView) findViewById(R.id.header_for_credits);
         txt6.setText(Html.fromHtml("<b>Credits:</b><br>"));
-
-        txt2 = (TextView) findViewById(R.id.other);
-        txt2.setText(Html.fromHtml("<br>Salam, if you have installed this app before the 27th, there will be no data on the dashboard.<br>" +
-                "This is because the app is designed to start displaying prayer times from the beginning of Ramadan.<br>"+
-                "Prayer times will begin displaying automatically starting <b>Saturday 27th May 2017.</b><br><br>" +
-                "To test the application is working, change your current device date to <b>27/05/2017</b> by going to <b>Settings>System>Date&amp;Time</b>"));
 
         txt1 = (TextView) findViewById(R.id.help);
         txt1.setText(Html.fromHtml("<b>Dua for Sehri:</b><br><br>" +
@@ -115,7 +106,7 @@ public class Info extends AppCompatActivity {
                 "<br>"));
 
         txt3 = (TextView) findViewById(R.id.credits);
-        txt3.setText(Html.fromHtml("<br>App created by Hassan Irshaad <br><br> All information for prayer times and dates provided by " +
+        txt3.setText(Html.fromHtml("<br>App created by Hassan Irshaad<br>App icon created by Zain Irshaad<br><br> All information for prayer times and dates provided by " +
                 "Jamia Masjid Anware-e-Medina & Portobello Islamic and Education Centre."));
 
     }

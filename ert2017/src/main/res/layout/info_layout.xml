@@ -44,15 +44,6 @@
             android:layout_marginTop="50dp"
         />
         <TextView
-            android:id="@+id/header_for_other"
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:textColor="@color/textColor"
-            android:layout_below="@id/help"
-            android:layout_marginTop="20dp"
-            android:background="@color/colorPrimaryDark"
-            />
-        <TextView
             android:id="@+id/other"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -133,6 +124,6 @@
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
         ads:adSize="BANNER"
-        ads:adUnitId="@string/banner_ad_unit_id4">
+        ads:adUnitId="@string/banner_ad_unit_id">
     </com.google.android.gms.ads.AdView>
 </RelativeLayout>

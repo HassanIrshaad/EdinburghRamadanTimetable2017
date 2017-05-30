@@ -79,7 +79,7 @@ public class Masjids extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent myIntent = new Intent(Masjids.this,
-                        Ramadan_Calendar.class);
+                        CalendarMain.class);
                 startActivity(myIntent);
             }
         });

@@ -7,6 +7,7 @@
     android:background="@color/colorPrimary"
     >
     <TextView
+        android:id="@+id/cal_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/textColor"
@@ -16,7 +17,6 @@
         android:textAlignment="center"
         android:textStyle="italic"
         android:background="@color/colorPrimaryDark"
-        android:text="@string/title_cal"
         />
     <TableLayout
         android:id="@+id/calendar_days"
@@ -338,6 +338,6 @@
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
         ads:adSize="BANNER"
-        ads:adUnitId="@string/banner_ad_unit_id1">
+        ads:adUnitId="@string/banner_ad_unit_id">
     </com.google.android.gms.ads.AdView>
 </RelativeLayout>
