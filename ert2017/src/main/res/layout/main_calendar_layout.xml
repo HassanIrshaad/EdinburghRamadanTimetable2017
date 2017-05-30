@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    >
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:background="@color/colorPrimaryDark"
+        android:text="Choose the mosque you follow:"
+        />
+
+    <Button
+        android:id="@+id/ann_bttn"
+        android:layout_width="match_parent"
+        android:background="@drawable/custom_button"
+        android:layout_height="80dp"
+        android:layout_marginTop="60dp"
+        android:textColor="@color/textColor"
+        android:text="Annandale Mosque"
+        />
+
+    <Button
+        android:id="@+id/cen_bttn"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/ann_bttn"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button"
+        android:textColor="@color/textColor"
+        android:text="Central Mosque"
+        />
+
+    <Button
+        android:id="@+id/iqra_bttn"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/cen_bttn"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button"
+        android:textColor="@color/textColor"
+        android:text="Iqra Mosque"
+        />
+
+    <Button
+        android:id="@+id/blck_bttn"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/iqra_bttn"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button"
+        android:textColor="@color/textColor"
+        android:text="Blackhall Mosque"
+        />
+
+    <TableLayout
+        android:id="@+id/button_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:stretchColumns="*"
+        android:background="@color/colorPrimary"
+        >
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/home"
+            style="@style/button_text"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:background="@drawable/custom_button2"
+            android:text="@string/crrnt" />
+        <Button
+            android:id="@+id/calendar"
+            android:layout_width="15dp"
+            android:layout_height="40dp"
+            style="@style/button_text"
+            android:background="@drawable/custom_button2"
+            android:text="@string/cal"
+            />
+        <Button
+            android:id="@+id/about_us"
+            android:layout_width="8dp"
+            android:layout_height="40dp"
+            style="@style/button_text"
+            android:background="@drawable/custom_button2"
+            android:text="Masjids"
+            />
+        <Button
+            android:id="@+id/info"
+            android:layout_width="8dp"
+            android:layout_height="40dp"
+            style="@style/button_text"
+            android:background="@drawable/custom_button2"
+            android:text="Duas"
+            />
+    </TableRow>
+    </TableLayout>
+</RelativeLayout>

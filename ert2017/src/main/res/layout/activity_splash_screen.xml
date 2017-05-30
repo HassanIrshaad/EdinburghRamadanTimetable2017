@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    android:background="@color/colorPrimary"
+    tools:context="com.test.hassan.annadaleramadantimetable.SplashScreen">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/app_name"
+        android:textColor="@color/textColor"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_marginLeft="50dp"
+        android:fontFamily="helvetica"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:background="@mipmap/ic_launcher"
+        android:id="@+id/imageView"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/date"
+        android:layout_alignLeft="@+id/progress_bar"
+        android:layout_alignStart="@+id/progress_bar" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="10dp"
+        android:text="2017" />
+
+    <TextView
+        android:id="@+id/quote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/progress_bar"
+        android:layout_below="@id/imageView"
+        android:textColor="@color/textColor"
+        android:textStyle="italic"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="100dp" />
+
+</RelativeLayout>
